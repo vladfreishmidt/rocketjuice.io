@@ -20,7 +20,8 @@ html {
   font-size: 62.5%; }
 
 section {
-  padding: 9rem 0 0; }
+  margin-top: 5rem;
+  padding: 4rem 0 0; }
   section h2 {
     font-size: 4.8rem;
     font-weight: 500;
@@ -41,7 +42,7 @@ body {
 
 .header {
   height: 77rem;
-  background: url(../img/hero-bg.jpg) rgba(0, 0, 0, 0.4);
+  background: url(../../img/hero-bg.jpg) rgba(0, 0, 0, 0.4);
   background-size: cover;
   background-blend-mode: multiply;
   padding-top: 2.5rem; }
@@ -106,82 +107,91 @@ body {
     font-size: 6.2rem;
     font-weight: 900; }
   .header__sub-title {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 300; }
+
+/* -----------------
+      INTRO INFO
+----------------- */
+.intro-info {
+  margin-top: 0;
+  padding: 6rem 0;
+  background-color: #f9c721; }
+  .intro-info__p {
+    font-size: 2rem;
+    color: #555; }
 
 /* -----------------
       SERVICES
 ----------------- */
-.services__wrapper:not(:last-child) {
-  margin-bottom: 5rem; }
-
-.services__wrapper:hover svg {
-  fill: #f9c721; }
-
-.services__logo {
-  max-width: 100%;
-  opacity: .8;
-  width: 50%;
-  fill: #eaebed; }
-
-.services__title {
-  font-size: 2.4rem;
-  font-weight: 500;
-  margin-bottom: 3rem; }
-
-.services__description {
-  font-size: 1.8rem;
-  font-weight: 300;
-  line-height: 1.6;
-  color: #555; }
-
-.services__partner-logo {
-  max-width: 100%; }
-
-.services__link {
-  font-size: 1.8rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #0079c5;
-  display: inline-block;
-  margin-top: 2rem;
-  position: relative;
-  transition: all .5s ease; }
-  .services__link.mt-additional-none {
-    margin-top: 0; }
-  .services__link:hover, .services__link:link, .services__link:visited {
-    text-decoration: none;
-    color: #0079c5; }
-  .services__link::after {
-    content: url("../img/link-underline.png");
-    position: absolute;
-    top: 2rem;
-    left: 0; }
-  .services__link::before {
-    content: url("../img/link-rocket.png");
-    position: absolute;
-    top: 2rem;
-    left: -2rem;
-    opacity: 0;
+.services {
+  margin-top: 0;
+  padding: 6rem 0; }
+  .services__wrapper:not(:last-child) {
+    margin-bottom: 5rem; }
+  .services__wrapper:hover svg {
+    fill: #f9c721; }
+  .services__logo {
+    max-width: 100%;
+    opacity: .8;
+    width: 50%;
+    fill: #eaebed; }
+  .services__title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 3rem; }
+  .services__description {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #555; }
+  .services__partner-logo {
+    max-width: 100%; }
+  .services__link {
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #0079c5;
+    display: inline-block;
+    margin-top: 2rem;
+    position: relative;
     transition: all .5s ease; }
-  .services__link:hover::before {
-    left: 8.6rem;
-    top: -.7rem;
-    opacity: 1; }
-  .services__link:hover::after {
-    content: url("../img/link-underline-long.png");
-    left: -2rem; }
+    .services__link.mt-additional-none {
+      margin-top: 0; }
+    .services__link:hover, .services__link:link, .services__link:visited {
+      text-decoration: none;
+      color: #0079c5; }
+    .services__link::after {
+      content: url("../../img/link-underline.png");
+      position: absolute;
+      top: 2rem;
+      left: 0; }
+    .services__link::before {
+      content: url("../../img/link-rocket.png");
+      position: absolute;
+      top: 2rem;
+      left: -2rem;
+      opacity: 0;
+      transition: all .5s ease; }
+    .services__link:hover::before {
+      left: 8.6rem;
+      top: -.7rem;
+      opacity: 1; }
+    .services__link:hover::after {
+      content: url("../../img/link-underline-long.png");
+      left: -2rem; }
 
 /* -----------------
       ABOUT US
 ----------------- */
 .about {
+  margin-top: 0;
   padding-bottom: 9rem; }
   .about__intro {
     font-size: 1.8rem;
     margin-bottom: 6rem; }
   .about__box {
-    min-height: 54.5rem;
+    min-height: 100%;
     padding: 5rem 3.5rem 0;
     text-align: center;
     -webkit-box-shadow: 0px 0px 7px 0px rgba(119, 119, 119, 0.3);
@@ -205,10 +215,20 @@ body {
     font-weight: 300;
     color: #555; }
 
+.workshops {
+  margin-top: 14rem; }
+  .workshops img {
+    max-width: 100%; }
+  .workshops__p {
+    font-size: 1.8rem;
+    color: #555; }
+
 /* -----------------
       CTA
 ----------------- */
 .cta {
+  margin-top: 0;
+  padding: 9rem 0 0;
   padding-bottom: 9rem;
   background-color: #f5f7fa; }
   .cta h3 {
