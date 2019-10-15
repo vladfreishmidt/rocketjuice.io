@@ -42,7 +42,7 @@ body {
 
 .header {
   height: 77rem;
-  background: url(../../img/hero-bg.jpg) rgba(0, 0, 0, 0.4);
+  background: url(../img/hero-bg.jpg) rgba(0, 0, 0, 0.4);
   background-size: cover;
   background-blend-mode: multiply;
   padding-top: 2.5rem; }
@@ -162,12 +162,12 @@ body {
       text-decoration: none;
       color: #0079c5; }
     .services__link::after {
-      content: url("../../img/link-underline.png");
+      content: url("../img/link-underline.png");
       position: absolute;
       top: 2rem;
       left: 0; }
     .services__link::before {
-      content: url("../../img/link-rocket.png");
+      content: url("../img/link-rocket.png");
       position: absolute;
       top: 2rem;
       left: -2rem;
@@ -178,7 +178,7 @@ body {
       top: -.7rem;
       opacity: 1; }
     .services__link:hover::after {
-      content: url("../../img/link-underline-long.png");
+      content: url("../img/link-underline-long.png");
       left: -2rem; }
 
 /* -----------------
