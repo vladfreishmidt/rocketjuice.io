@@ -1,0 +1,17 @@
+.btn {
+   font-size: 2.2rem;
+   font-weight: 900;
+   text-transform: uppercase;
+   color: #fff;
+   background-color: var(--color-highlight);
+   border-radius: 3px;
+
+   &:hover {
+       background-color: darken($color-highlight, 8%);
+       color: #fff;
+   }
+
+   &__large {
+       padding: 2.2rem 4rem; 
+   }
+}

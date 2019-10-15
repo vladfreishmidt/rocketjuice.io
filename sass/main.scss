@@ -1,0 +1,84 @@
+:root {
+    // -----------------
+    // COLORS
+    // -----------------
+    --color-primary: rgb(43, 151, 253);
+    --color-primary-light: rgb(118, 184, 245);
+    --color-secondary: ;
+    --color-gradient: ;
+    --color-heading: rgb(77, 77, 77);
+    --color-text: rgb(102, 102, 102);;
+
+    --color-grey-light: #fffbfb;
+    --color-grey-section: rgb(247, 247, 247);
+
+    --color-footer-bg: #3e3e3e;
+
+    // -----------------
+    // FONTS
+    // -----------------
+    // font-family: ;
+
+
+    // -----------------
+    // BOX-SHADOWS
+    // -----------------
+
+    // -----------------
+    // ANIMATIONS
+    // -----------------
+}
+
+
+// -----------------
+// BASE
+// -----------------
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+}
+
+section {
+    padding: 9rem 0 0;
+
+    // &:nth-child(odd) {
+    //     background-color: var(--color-grey-section);
+    // }
+
+    h2 {
+        font-size: 4.8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 4rem;
+    }
+}
+
+
+
+// BASE 
+@import '../sass/base/base';
+@import '../sass/base/typography';
+
+
+// LAYOUT
+@import '../sass/layout/header';
+@import '../sass/layout/navigation';
+@import '../sass/layout/footer';
+
+
+// COMPONENTS
+@import '../sass/components/buttons';
+
+
+
+// PAGES
+@import '../sass/pages/home';

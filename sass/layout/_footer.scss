@@ -1,0 +1,30 @@
+.footer {
+
+   &__menu {
+       ul li a {
+        color: $color-highlight;
+       }
+   } 
+
+   &__privacy-link {
+    font-size: 1.6rem;
+    color: $color-highlight;
+
+    &:hover,
+    &:visited,
+    &:link {
+       color: $color-highlight;
+    }
+   } 
+
+   &__rights {
+       color: #fefefe;
+       font-size: 1.6rem;
+   }
+
+   &__menu {
+       a {
+        color: $color-highlight;
+       }
+   }
+}
